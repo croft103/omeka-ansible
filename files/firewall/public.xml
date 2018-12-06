@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>Public</short>
+  <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
+  <rule family="ipv4">
+    <source address="164.67.40.0/24"/>
+    <service name="ssh"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="164.67.40.224"/>
+    <service name="nrpe"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source invert="True" address="164.67.40.224"/>
+    <icmp-type name="echo-request"/>
+    <drop/>
+  </rule>
+  <rule family="ipv4">
+    <source address="164.67.152.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="128.97.224.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="128.97.228.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="128.97.232.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="128.97.234.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="128.97.244.0/23"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="128.97.247.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="128.97.248.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="149.142.26.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="149.142.224.0/23"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="164.67.62.0/27"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="164.67.62.80/28"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="164.67.62.96/28"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="169.232.224.0/23"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="47.144.160.52/32"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+  <rule family="ipv4">
+    <source address="164.67.16.0/24"/>
+    <service name="omeka"/>
+    <accept/>
+  </rule>
+</zone>

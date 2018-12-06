@@ -1,0 +1,11 @@
+---
+php56_pkgs:
+  - rh-php56-php
+  - rh-php56-php-pdo
+  - rh-php56-php-xml
+  - rh-php56-php-mysqlnd
+  - rh-php56-php-mbstring
+
+httpd24_pkgs:
+  - httpd24-httpd
+  - httpd24-mod_ssl

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>Omeka</short>
+  <description>General access to Dataverse</description>
+  <port protocol="tcp" port="80"/>
+  <port protocol="tcp" port="443"/>
+</service>
